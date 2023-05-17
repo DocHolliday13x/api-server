@@ -6,12 +6,12 @@
 
 ### Problem Domain
 
-This will be another basic server created to practice building a core, standards compliant Express server using best practices.
+Build a RESTful API using Express, by creating a proper series of endpoints that perform CRUD operations on a Postgres SQL Database, using the REST standard.
 
 ### Links
 
-- [GitHub Actions ci/cd](https://github.com/DocHolliday13x/basic-express-server/actions)
-- [back-end server url](https://basic-express-server-l72x.onrender.com/)
+- [GitHub Actions ci/cd](https://github.com/DocHolliday13x/api-server/actions)
+- [back-end server url](https://api-server.onrender.com/)
 
 ### Collaborators
 
