@@ -54,6 +54,6 @@ Build a RESTful API using Express, by creating a proper series of endpoints that
 
 #### UML
 
-![]()
+![UML](/public/img/lab03UML.png)
 
 #### Resources
