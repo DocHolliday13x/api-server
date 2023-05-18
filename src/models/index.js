@@ -18,8 +18,8 @@ const clothes = clothesModel(sequelizeDB, DataTypes);
 // Exports
 module.exports = {
   sequelizeDB,
-  foodModel,
-  clothesModel,
+  food,
+  clothes,
 };
 
 
