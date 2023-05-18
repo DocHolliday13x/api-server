@@ -2,6 +2,8 @@
 
 // Imports
 const express = require('express');
+const cors = require('cors');
+const PORT = process.env.PORT || 3000;
 
 // Handlers
 const handler500 = require('./error-handlers/500.js');
