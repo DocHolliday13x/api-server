@@ -17,6 +17,10 @@ Build a RESTful API using Express, by creating a proper series of endpoints that
 
 - Ryan Gallaway - showed me everything I know about this becuase before today, I've literally never seen any of this.
 
+- Reece Renninger - collabed with
+
+- Ike Steoger - collabed with
+
 ### Setup
 
 #### `.env` requirements (where applicable)
@@ -37,19 +41,42 @@ Build a RESTful API using Express, by creating a proper series of endpoints that
 
 - Feature One: Details of feature
 - GET : `/` - specific route to hit
-- GET : `/person` - expects aa query string with a name property
+- GET : `/person` - expects a query string with a name property
 
 #### Tests
 
 - How do you run tests?
+  <!-- test the express server -->
   - `nodemon`
   - open thunder client
   - enter url w/ query string
   - hit send
+
+  <!-- test postgres database functionality locally -->
+  - `psql`
+  - `\c <database name>`
+  - `\dt`
+  - `\d <table name>`
+  - `SELECT * FROM <table name>;`
+  - `INSERT INTO <table name> (name, type) VALUES ('<name>', '<type>');`
+  - `UPDATE <table name> SET name='<new name>', type='<new type>' WHERE id=<id>;`
+  - `DELETE FROM <table name> WHERE id=<id>;`
+
+  <!-- test the /food and /clothes routes -->
+  - confirm that the database is empty
+  - confirm that the expected food/clothes exist after a POST request
+  - confirm that the expected food/clothes are updated after a PUT request
+  - confirm that the expected food/clothes are deleted after a DELETE request
+  - test all RESTful CRUD routes
+
+  - TDD if possible
+
 - Any tests of note?
   - 200 status on a proper request
   - 500 status on a bad request
   - 404 status on a bad route
+  - RESTful CRUD
+
 - Describe any tests that you did not complete, skipped, etc
 
 #### UML

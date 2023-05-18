@@ -30,11 +30,10 @@ app.get('/person', validator, (req, res, next) => {
   res.status(200).json(desiredOutput);
 });
 
-const start = (port) => app.listen(port, () => console.log(`Server up on port ${port}`));
-
 app.use('*', handler404);
 app.use(handler500);
 
+const start = (port) => app.listen(port, () => console.log(`Server up on port ${port}`));
 
 // Exports
 module.exports = { start, app };
