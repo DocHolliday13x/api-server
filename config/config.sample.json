@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "ryan",
+    "username": "<your-username>",
     "password": null,
-    "database": "api-server",
+    "database": "<your-database-name>",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
