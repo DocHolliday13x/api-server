@@ -7,7 +7,7 @@ const { food } = require('../models/index.js');
 
 const router = express.Router();
 
-// Routes
+// Routes - isolates certain routes to keep server.js modularized
 router.get('/food', async (req, res, next) => {
   try {
     const foodData = await food.findAll();
