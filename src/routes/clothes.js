@@ -51,7 +51,7 @@ router.delete('/clothes/:id', async (req, res, next) => {
   try {
     const clothesId = parseInt(req.params.id);
     const deletedClothes = await clothes.destroy({ where: { id: clothesId } });
-    res.status(200).send(deletedClothes);
+    res.sendStatus(200).send(deletedClothes);
   } catch (e) {
     next(e.message);
   }
