@@ -93,3 +93,19 @@
 #### Resources
 
 - [Sequelize Docs](https://sequelize.org/docs/v6/core-concepts/assocs/)
+
+#### Code Review Process
+
+- [PR #1]()
+
+- [PR #2]()
+
+- Partner: Nick Mullaney
+
+  - Nick is a fantastic partner. He is very knowledgeable and was able to help me with a lot of the issues I was having. He was able to help me with my error handling, my naming conventions, and my code commenting. He also helped me with my code refactoring and modularization. In return, I was able to help him with his code refactoring and modularization. We were able to help each other with our code reviews and we both learned a lot from each other.
+
+- Key Takeaways:
+
+  - I need to work on my error handling
+  - I need to work on my naming conventions
+  - I need to work on my code commenting
