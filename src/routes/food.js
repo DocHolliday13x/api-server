@@ -41,8 +41,8 @@ router.put('/food/:id', async (req, res, next) => {
   try {
     const foodId = parseInt(req.params.id);
     const foodObject = req.body;
-    const foodData = await food.findOne({ where: { id: foodId } });
-    const updatedFood = await foodData.update(foodObject);
+    await food.update(foodObject, { where: { id: foodId } });
+    const updatedFood = await food.findByPk(foodId);
     res.status(200).send(updatedFood);
   } catch (e) {
     next(e.message);
@@ -50,9 +50,12 @@ router.put('/food/:id', async (req, res, next) => {
 });
 
 router.delete('/food/:id', async (req, res, next) => {
+  console.log(req.params.id);
   try {
     const foodId = parseInt(req.params.id);
-    const deletedFood = await food.destroy({ where: { id: foodId } });
+    const deletedFood = await food.findOne({ where: { id: foodId } });
+    await food.destroy({ where: { id: foodId } });
+    console.log(deletedFood);
     res.status(200).send(deletedFood);
   } catch (e) {
     next(e.message);
