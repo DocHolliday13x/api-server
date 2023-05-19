@@ -1,4 +1,4 @@
-# LAB - Class 03
+# LAB - Class 03 and Class 04
 
 ## Project: api-server
 
@@ -6,7 +6,11 @@
 
 ### Problem Domain
 
-Build a RESTful API using Express, by creating a proper series of endpoints that perform CRUD operations on a Postgres SQL Database, using the REST standard.
+1. Lab 03:
+   - Build a RESTful API using Express, by creating a proper series of endpoints that perform CRUD operations on a Postgres SQL Database, using the REST standard.
+
+2. Lab 04:
+    - Modularize the codebase by refactoring it and moving functionality into modules by creating a collections class for my models.
 
 ### Links
 
@@ -20,6 +24,8 @@ Build a RESTful API using Express, by creating a proper series of endpoints that
 - Reece Renninger - collabed with
 
 - Ike Steoger - collabed with
+
+- Nick Mullaney - reviewed each others code for Lab 03/04, gave and recieved feedback for improvements.
 
 ### Setup
 
@@ -81,6 +87,9 @@ Build a RESTful API using Express, by creating a proper series of endpoints that
 
 #### UML
 
-![UML](/public/img/lab03UML.png)
+![Lab 03 UML](/public/img/lab03UML.png)
+![Lab 04 UML](/public/img/lab04UML.png)
 
 #### Resources
+
+- [Sequelize Docs](https://sequelize.org/docs/v6/core-concepts/assocs/)
